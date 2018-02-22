@@ -6,7 +6,6 @@
 	width:100%;
 	position:relative;
 	box-sizing: border-box;	
-	background:#ccc;
 }
 .brick > .pad {padding:10px;}
 
