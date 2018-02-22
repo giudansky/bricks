@@ -6,25 +6,36 @@
 	margin:0;
 	width:100%;
 	position:relative;
+	box-sizing: border-box;	
 }
 .brick > .pad {padding:10px;}
 
 .left, .pull-left {float:left;}
 .right, .pull-right {float:right;}
 
-.one {width:100%;}
-.two {width:50%;}
-.three {width:33%;}
-.four {width:25%;}
-.five {width:20%;} 
+.one {width:100% ;}
+.two {width:50% ;}
+.three {width:33% ;}
+.four {width:25% ;}
+.five {width:20% ;} 
+.six {width: 16.6% ;}
+
+.dauto {width:auto;}
+.d90 {width:90%;}
+.d80 {width:80%;}
+.d70 {width:70%;}
+.d60 {width:60%;}
+.d40 {width:40%;}
+.d30 {width:30%;}
+.d20 {width:20%;}
+.d10 {width:10%;}
 
 .top {vertical-align:top;}
 .bottom {vertical-align:bottom;}
 .middle {vertical-align:middle;}
-.aligncenter {text-align:center;}
-.alignleft {text-align:left;}
-.alignright{text-align:right;}
-
+.acenter {text-align:center;}
+.aleft {text-align:left;}
+.aright{text-align:right;}
 
 .pad5 {padding:5px;}
 .pad10 {padding:10px;}
@@ -32,8 +43,10 @@
 .fontS {font-size:0.9em}
 .fontB {font-size:1.1em}
 
-.inline {display:inline;}
+.inline {display:inline; float:none;}
+.nofloat {float:none;}
 .block {display:block;}
+.ib {display:inline-block; float:none; vertical-align:middle;}
 .mcenter {margin:0 auto;}
 
 .bold {font-weight:bold;}
@@ -41,10 +54,10 @@
 
 table {width:100%;}
 
-img .responsive {
+.fitimage img, img.fitimage {
 	width:100%;
 	height:auto;
 }
 .hide {display:none;}
 
-/* ------------------------------------------- bricks END*/
+/* ------------------------------------------- bricks END */
