@@ -1,5 +1,4 @@
 /* ------------------------------------------- bricks */
-
 .brick {
 	float:left;
 	padding:0;
@@ -7,18 +6,19 @@
 	width:100%;
 	position:relative;
 	box-sizing: border-box;	
+	background:#ccc;
 }
 .brick > .pad {padding:10px;}
 
 .left, .pull-left {float:left;}
 .right, .pull-right {float:right;}
 
-.one {width:100% ;}
-.two {width:50% ;}
-.three {width:33% ;}
-.four {width:25% ;}
-.five {width:20% ;} 
-.six {width: 16.6% ;}
+.one {width:100%;}
+.two {width:50%;}
+.three {width:33%;}
+.four {width:25%;}
+.five {width:20%;} 
+.six {width: 16.6%;}
 
 .dauto {width:auto;}
 .d90 {width:90%;}
