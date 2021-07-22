@@ -92,14 +92,7 @@ table { width: 100%;}
     align-items: center;
 }
 
-.brick_flex_equal {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.brick_flex_equal>* {
+.brick_flex.equal > * {
     flex-grow: 1;
     flex-basis: 500px;
 }
