@@ -89,13 +89,35 @@ table { width: 100%;}
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
+    align-items: top;
+    gap:0.5em;
 }
 
-.brick_flex.equal > * {
+.brick_flex > * {
+    min-height:100px;
     flex-grow: 1;
-    flex-basis: 500px;
-}
+    flex-shrink:1;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    padding:1em;
+  	box-sizing: border-box;
+    min-width: 20em;
 
+  }
+.brick_flex .grow {
+  flex-grow:1;
+}
+.brick_flex .nogrow {
+  flex-grow:0;
+}
+.brick_flex .one {
+  width:100% !important;
+}
+.brick_flex .two {
+ width:45% !important;
+}
+.brick_flex .three {
+ width: 25% !important;
+}
 /* FLEX END */
 /* ------------------------------------------- bricks END*/
