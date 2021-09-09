@@ -21,6 +21,7 @@
 .acenter { text-align: center;}
 .aleft { text-align: left;}
 .aright { text-align: right;}
+.pad0, .p0 {padding:0;}
 .pad5,.p5 { padding: 5px;}
 .pad10,.p10 { padding: 10px;}
 .pad20,.p20 { padding: 20px;}
