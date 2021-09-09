@@ -1,4 +1,6 @@
-/* ------------------------------------------- bricks */
+* {
+	box-sizing: border-box;
+}
 .left,.pull-left { float: left;}
 .right,.pull-right {float: right;}
 .one { width: 100%; }
@@ -81,45 +83,107 @@
 .bold { font-weight: bold;}
 .italic { font-style: italic;}
 .font_large {font-size:2em;}
+@media only screen and (max-width: 992px) {
+
+.mobilecenter {text-align:center;}
+}
 /* typo END */
 table { width: 100%;}
 .hide {display:none;}
-/* FLEX */
 
-.brick_flex {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: top;
-    gap:0.5em;
+/* BRICK FLEX */
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+    gap: 0.5em;
+  --gap: 0.5em;
+    align-items:center;
+
+}
+.container.flex {
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 0.5em;
+  --gap: 0.5em;
+  position:relative;
+}
+.container.flex > * {
+  flex-grow: 1;
+  flex-shrink: 1;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  min-width:20ch;
 }
 
-.brick_flex > * {
-    min-height:100px;
-    flex-grow: 1;
-    flex-shrink:1;
-    word-break: break-word;
-    overflow-wrap: break-word;
-    padding:1em;
-  	box-sizing: border-box;
+@media only screen and (max-width: 992px) {
+  .container.flex > * {
     min-width: 20em;
-
   }
-.brick_flex .grow {
-  flex-grow:1;
-}
-.brick_flex .nogrow {
-  flex-grow:0;
-}
-.brick_flex .one {
-  width:100% !important;
-}
-.brick_flex .two {
- width:45% !important;
-}
-.brick_flex .three {
- width: 25% !important;
+  .container.flex .container.flex > * {
+   /* flex-basis: 10em;*/
+  }
 }
 
-/* FLEX END */
-/* ------------------------------------------- bricks END*/
+.flex > * img {
+  max-width: 100%;
+}
+
+.flex .grow {
+  flex-grow: 1;
+}
+
+.flex .nogrow {
+  flex-grow: 0;
+}
+.nogap {
+  gap: 0 !important;
+}
+.flex .one {
+  width: 100% !important;
+}
+
+.flex .two {
+  width: calc(50% - var(--gap));
+}
+
+.flex .three {
+  width: calc(33.3% - var(--gap));
+}
+
+.flex .four {
+  width: calc(25% - var(--gap));
+  min-width: 15em;
+}
+.flex .five {
+  width: calc(20% - var(--gap));
+  min-width: 10em;
+}
+
+@media screen and (min-width: 992px) {
+  .flex.cols-2 > * {
+    width: calc(100% - var(--gap));
+  }
+
+  .flex.cols-3 > * {
+    width: calc(50% - var(--gap));
+  }
+
+  .flex.cols-4 > * {
+    width: calc(33% - var(--gap));
+  }
+}
+@media screen and (min-width: 1200px) {
+  .flex.cols-2 > * {
+    width: calc(50% - var(--gap));
+  }
+
+  .flex.cols-3 > * {
+    width: calc(33.3% - var(--gap));
+  }
+
+  .flex.cols-4 > * {
+    width: calc(25% - var(--gap));
+  }
+}
+/* BRICK FLEX END */
