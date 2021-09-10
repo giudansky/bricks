@@ -1,8 +1,9 @@
+/* cdngit public link: https://gitcdn.link/repo/giudansky/bricks/master/bricks.css */
+
+
 * {
 	box-sizing: border-box;
 }
-
-
 .argh {}
 .left,.pull-left { float: left;}
 .right,.pull-right {float: right;}
