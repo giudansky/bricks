@@ -42,6 +42,7 @@
 .inline { display: inline; float: none;}
 .nofloat { float: none;}
 .block { display: block;}
+.hide {display:none;}
 .ib { display: inline-block; float: none; vertical-align: middle;}
 .il { display: inline; float: none; vertical-align: middle;}
 .mcenter { margin: 0 auto;}
@@ -51,15 +52,13 @@
 .bold { font-weight: bold;}
 .italic { font-style: italic;}
 .font_large {font-size:2em;}
-/* ---------------------- typo END*/
 
 @media only screen and (max-width: 992px) {
-
 .mobilecenter {text-align:center;}
 }
+/* ---------------------- typo END*/
 /* typo END */
-table { width: 100%;}
-.hide {display:none;}
+
 
 /* BRICK FLEX */
 
