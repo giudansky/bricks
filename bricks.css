@@ -40,19 +40,29 @@
 /* ------------------ widths END */
 
 .inline { display: inline; float: none;}
+/* prettier-ignore */
 .nofloat { float: none;}
+/* prettier-ignore */
 .block { display: block;}
+/* prettier-ignore */
 .hide {display:none;}
+/* prettier-ignore */
 .ib { display: inline-block; float: none; vertical-align: middle;}
+/* prettier-ignore */
 .il { display: inline; float: none; vertical-align: middle;}
+/* prettier-ignore */
 .mcenter { margin: 0 auto;}
 
 /* ------------------ typo */
 .white {color:#fff;}
+/* prettier-ignore */
 .bold { font-weight: bold;}
+/* prettier-ignore */
 .italic { font-style: italic;}
+/* prettier-ignore */
 .font_large {font-size:2em;}
 
+/* prettier-ignore */
 @media only screen and (max-width: 992px) {
 .mobilecenter {text-align:center;}
 }
