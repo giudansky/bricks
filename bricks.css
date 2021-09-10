@@ -1,10 +1,13 @@
 /* cdngit public link: https://gitcdn.link/repo/giudansky/bricks/master/bricks.css */
 
+/* cleaner */
 
 * {
 	box-sizing: border-box;
 }
-.argh {}
+/* cleaner END*/
+
+/* margins and paddings  */
 .left,.pull-left { float: left;}
 .right,.pull-right {float: right;}
 .one { width: 100%; }
@@ -73,6 +76,8 @@
 .mr40 { margin-right: 40px;}
 .mb40 { margin-bottom: 40px;}
 .ml40 { margin-left: 40px;}
+/* margins and paddings END */
+
 .bb5 { border-bottom: solid 5px var(--second_color);}
 .fontS { font-size: 0.9em}
 .fontB { font-size: 1.1em}
