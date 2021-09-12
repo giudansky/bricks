@@ -5,6 +5,9 @@
 * {
 	box-sizing: border-box;
 }
+table {width:100%;}
+
+
 /* ------------------ cleaner END*/
 
 /* ------------------ margins and paddings  */
@@ -35,8 +38,12 @@
 .mt40{ margin-top: 40px;}.mr40{ margin-right: 40px;}.mb40{ margin-bottom: 40px;}.ml40{ margin-left: 40px;}
 /* ------------------ margins and paddings END */
 /* ------------------ widths */
+/* percentage widths */
 /* prettier-ignore */
 .d100,.w100{ width: 100%!important;}.d90,.w90{ width: 90%!important;} .d80,.w80{ width: 80%!important;} .d70,.w70{ width: 70%!important;}.d60,.w60{ width: 60%!important;}.d60,.w50{ width: 50%!important;}.d40,.w40{ width: 40%!important;}.d30,.w30{ width: 30%!important;}.d20,.w20{ width: 20%!important;}.d10,.w10{ width: 10%!important;}
+/* fractions widths */
+/* prettier-ignore */
+.one {width:100%;}.two {width:50%;}.three {width:33%;}.four {width:25%;}.five {width:20%;}.six {width: 16.6%;}
 /* ------------------ widths END */
 
 .inline { display: inline; float: none;}
@@ -67,6 +74,31 @@
 .mobilecenter {text-align:center;}
 }
 /* ------------------ typo END*/
+/* ------------------ images */
+.fitimage img, img.fitimage {
+	width:100%;
+	height:auto;
+}
+/* ------------------ images END */
+/* ------------------ old bricks (float) */
+
+.brick {
+	float:left;
+	padding:0;
+	margin:0;
+	width:100%;
+	position:relative;
+	box-sizing: border-box;
+}
+@media screen and (max-width: 800px) {
+	.brick {width:100% !important;}
+}
+.brick > .pad {padding:10px;}
+
+.left, .pull-left {float:left;}
+.right, .pull-right {float:right;}
+
+/* ------------------ old bricks (float) END */
 
 
 /* ------------------ BRICK FLEX */
