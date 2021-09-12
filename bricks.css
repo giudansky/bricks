@@ -50,6 +50,11 @@ table {width:100%;}
 /* prettier-ignore */
 .nofloat { float: none;}
 /* prettier-ignore */
+.fitimage img, img.fitimage {
+	width:100%;
+	height:auto;
+}
+/* prettier-ignore */
 .block { display: block;}
 /* prettier-ignore */
 .hide {display:none;}
@@ -74,12 +79,7 @@ table {width:100%;}
 .mobilecenter {text-align:center;}
 }
 /* ------------------ typo END*/
-/* ------------------ images */
-.fitimage img, img.fitimage {
-	width:100%;
-	height:auto;
-}
-/* ------------------ images END */
+
 /* ------------------ old bricks (float) */
 
 .brick {
