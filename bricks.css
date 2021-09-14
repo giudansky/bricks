@@ -141,10 +141,12 @@ table {width:100%;}
 
 .flex .grow {
   flex-grow: 1;
+  
 }
 
 .flex .nogrow {
   flex-grow: 0;
+  min-width: unset;
 }
 .nogap {
   gap: 0 !important;

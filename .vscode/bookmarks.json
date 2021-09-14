@@ -1,0 +1,24 @@
+{
+	"files": [
+		{
+			"path": "bricks.css",
+			"bookmarks": [
+				{
+					"line": 12,
+					"column": 0,
+					"label": "margins"
+				},
+				{
+					"line": 39,
+					"column": 0,
+					"label": "widths"
+				},
+				{
+					"line": 103,
+					"column": 0,
+					"label": "flex"
+				}
+			]
+		}
+	]
+}
