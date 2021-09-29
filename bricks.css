@@ -173,6 +173,9 @@ table {width:100%;}
 }
 
 @media screen and (min-width: 992px) {
+  .flex.cols-1 > * {
+    width: calc(100% - var(--gap));
+  }
   .flex.cols-2 > * {
     width: calc(100% - var(--gap));
   }
@@ -186,6 +189,7 @@ table {width:100%;}
   }
 }
 @media screen and (min-width: 1200px) {
+
   .flex.cols-2 > * {
     width: calc(50% - var(--gap));
   }
